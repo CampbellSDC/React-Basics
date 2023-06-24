@@ -1,7 +1,8 @@
 
 
-const headerEl = (
-    <header>
+function HeaderEl() {
+    return (
+        <header>
         <img src='/React_logo.png'></img>
         <h1>Fun Facts About React</h1>
         <ul>
@@ -12,8 +13,11 @@ const headerEl = (
             <li>Powers thousands of enterprise apps, including mobile apps</li>
         </ul>
     </header>
-)
+    )
+}
+    
+
 ReactDOM.render(
-    headerEl,
+    <HeaderEl />,
     document.getElementById('root')
 )

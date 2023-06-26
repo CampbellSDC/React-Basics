@@ -4,20 +4,55 @@ function HeaderEl() {
     return (
         <header>
         <img src='/React_logo.png'></img>
-        <h1>Fun Facts About React</h1>
         <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on GitHub</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
         </ul>
     </header>
     )
+
+    Main()
+
+    Footer()
+}
+
+function Main(){
+    return (
+        <div>
+            <h1>Reasons I'm Excited to Learn React</h1>
+            <ul>
+                <li>It's a popular library</li>
+                <li>Increasing skill set to build more reusable code</li>
+                <li>More likely to get a job as a developer with this knowledge</li>
+            </ul>
+
+        </div>
+        
+    )
+}
+
+function Footer() {
+    return (
+        <footer>
+            <small>© 2021 Campbell development. All rights reserved.</small>
+        </footer>
+    )
 }
     
+function Page() {
+    return (
+        <div>
+            <HeaderEl />   
+            <Main />
+            <Footer />     
+
+        </div>
+        
+    )
+}
 
 ReactDOM.render(
-    <HeaderEl />,
+    <Page />,
     document.getElementById('root')
 )
